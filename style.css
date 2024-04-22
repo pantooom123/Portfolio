@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-align: none;
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+.wrap {
+  width: 100%;
+}
+.grid_box {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  padding: 5rem;
+  grid-template-columns: 1.8fr 1.1fr 1.1fr;
+  grid-template-areas:
+    "aside porfile t-top"
+    "aside porfile b-top";
+}
+
+.grid_box > div:nth-child(2) {
+  border: 1px solid #dddddd;
+  border-right: none;
+}
+.grid_box > div:nth-child(3) {
+  border: 1px solid #dddddd;
+}
+.grid_box > div:nth-child(4) {
+  border: 1px solid #dddddd;
+  border-top: none;
+}
+.asdie {
+  grid-area: aside;
+  overflow: hidden;
+}
+.asdie-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.porfile {
+  grid-area: porfile;
+}
+.t-top {
+  grid-area: t-top;
+  cursor: pointer;
+}
+
+.ttop h3 {
+  font-size: 30px;
+  padding: 10px;
+}
+.b-top {
+  grid-area: b-top;
+  cursor: pointer;
+}
+.t-top h3 {
+  padding: 10px;
+  font-size: 30px;
+}
+
+.porfile h3 {
+  padding: 10px;
+  font-size: 4rem;
+}
+.porfile p {
+  padding: 10px;
+  font-size: 1.8rem;
+  align-items: center;
+  text-align: left;
+}
+.ttop {
+  /* height: 100%; */
+}
+.btop {
+  /* height: 100%; */
+}
+.btop h3 {
+  font-size: 30px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrap {
+    width: 100%;
+  }
+  .grid_box {
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "aside aside"
+      "porfile porfile"
+      "t-top b-top";
+    width: 100%;
+  }
+  .grid_box > div:nth-child(2) {
+    border: 1px solid #dddddd;
+  }
+  .grid_box > div:nth-child(3) {
+    border-top: none;
+    border-right: none;
+  }
+  .asdie {
+    width: 100%;
+  }
+  .porfile p {
+    font-size: 1.5rem;
+  }
+  .t-top,
+  .b-top {
+    text-align: center;
+    padding: 5rem 0;
+  }
+  .t-top h3,
+  .btop h3 {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 390px) {
+}

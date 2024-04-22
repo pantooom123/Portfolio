@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.wrap {
+  width: 100%;
+}
+.title {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 1.4rem;
+}
+h4 {
+  margin: 1rem;
+  font-size: 1.4em;
+}
+.wrap-container {
+  padding: 6rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gird-wrap {
+  width: 1300px;
+  height: auto;
+}
+
+.grid-container {
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.box {
+  height: 351px;
+  background: #fff;
+  outline: 1px solid #dedede;
+  padding: 30px 20px;
+  cursor: pointer;
+}
+
+.box:hover {
+  box-sizing: border-box;
+  transition: all 0.1s ease-in-out;
+  outline: 2px solid #5b10e5;
+  box-shadow: 10px 30px 30px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+  cursor: pointer;
+}
+
+.box-info {
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s;
+  width: 100%;
+  height: 250px;
+}
+.box-info:hover::before {
+  top: 0;
+}
+.box-info::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+.box-info .info-p {
+  color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 20px;
+  color: #fff;
+  font-size: 2rem;
+}
+.box-info:hover .info-p {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  transition: 0.5s;
+}
+
+.grid-container img {
+  width: 100%;
+  height: 250px;
+  display: block;
+}
+
+.box-title {
+  display: block;
+  font-size: 2.2rem;
+  margin-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: -2px;
+  font-weight: bold;
+}
+.box:hover .box-title {
+  color: #550adf;
+}
+
+/*  */
+.sec2 {
+  width: 100%;
+  background: #f8f9fb;
+}
+.skill-wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 100vh;
+}
+.skill-wrapper h1 {
+  padding-top: 1rem;
+  align-items: center;
+  text-align: center;
+  font-size: 4rem;
+}
+.skill-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill-list {
+  margin-bottom: 20px;
+  width: 25%;
+  padding: 0 10px;
+}
+.editor {
+  /* line-height: 1.4; */
+  height: 260px;
+  background-color: #333;
+  padding: 0 30px 30px 30px;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 70px;
+  color: #fff;
+}
+
+.editor-icon {
+  margin-top: -35px;
+  transition: all 0.4s;
+  transform: scale(0.8);
+}
+.editor:hover .editor-icon {
+  transform: scale(1);
+}
+
+.editor h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem 0;
+}
+.editor p {
+  /* color: #777; */
+  color: #dedede;
+  font-size: 1.5rem;
+  word-break: keep-all;
+}
+/*  */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+
+  justify-content: center;
+  display: none;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.modal-body {
+  position: absolute;
+  width: 90%;
+  height: 95vh;
+  background-color: #fff;
+  overflow: hidden;
+}
+.modal-body i {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 40px;
+}
+iframe {
+  width: 100%;
+  height: 100vh;
+}
+
+@media (max-width: 1000px) {
+  .skill-list {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrap {
+    width: 100%;
+  }
+  .title h3 {
+    font-size: 1.2rem;
+  }
+  .wrap-container {
+    width: 100%;
+    padding: 3rem 3rem;
+  }
+  .gird-wrap {
+    width: 100%;
+  }
+  .grid-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .skill-list {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .title h3 {
+    font-size: 1.1rem;
+  }
+  /*  */
+  .modal-body {
+    height: 84vh;
+  }
+  iframe {
+    height: 100%;
+  }
+  .modal-body i {
+    right: 0;
+    top: 0;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}

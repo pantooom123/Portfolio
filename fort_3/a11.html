@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6444cc98a1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      nav {
+        width: 150px;
+      }
+      ul {
+        padding: 0;
+      }
+      li {
+        list-style: none;
+        line-height: 34px;
+      }
+      a {
+        display: block; /* 중요 */
+        text-decoration: none;
+        color: #616161;
+        text-align: center;
+      }
+      .snd_menu {
+        background: #efefef;
+      }
+      .trd_menu {
+        background: #ddd;
+      }
+      .sub_menu {
+        display: none;
+      } /* 서브메뉴들 숨김 */
+
+      .selec {
+        background: #c45;
+        color: #efefef;
+      }
+    </style>
+    <script defer src="a22.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <ul id="main_menu">
+        <li>
+          <a href="#">WEB</a>
+          <ul class="snd_menu sub_menu">
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Design</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">INTERIOR</a>
+          <ul class="snd_menu sub_menu">
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Design</a></li>
+          </ul>
+        </li>
+        <li><a href="#">MARKETING</a></li>
+        <li>
+          <a href="#">POSTER</a>
+          <ul class="snd_menu sub_menu">
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Design</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

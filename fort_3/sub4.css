@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&family=Poppins:wght@400;500;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.wrap {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+/********************* header *********************/
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 10%;
+  background: #fff;
+}
+.header-wrap {
+  width: 1280px;
+
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#menu-icon {
+  font-size: 38px;
+  z-index: 1001;
+  cursor: pointer;
+  margin-left: 5px;
+  display: none;
+}
+
+/* gnb */
+.nav {
+  width: 100%;
+}
+#gnbb {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 110px;
+  position: relative;
+}
+
+#gnbb::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  padding: 0px 100%;
+  top: 127%;
+  height: 200px;
+  background: #fff;
+  box-shadow: 0px 10px 10px 0px rgba(48, 49, 51, 6%);
+  display: block;
+}
+#gnbb::before {
+  display: none;
+}
+#gnbb.on::before {
+  display: block;
+}
+
+.gnb__drop-down {
+  position: absolute;
+  top: 100%;
+  display: none;
+  padding-top: 20px;
+}
+#gnbb.on li .gnb__drop-down {
+  display: block;
+}
+.gnb__drop-down li {
+  align-items: center;
+  text-align: center;
+}
+.gnb__drop-down li a {
+  font-size: 1rem;
+}
+.gnb li {
+  cursor: pointer;
+  padding: 8px 0px;
+  display: flex;
+  justify-content: center;
+}
+.gnb > li > a {
+  font-size: 1.1rem;
+}
+.gnb li a:hover {
+  color: #000;
+  font-weight: 500;
+}
+.r-nav {
+  display: flex;
+  gap: 10px;
+}
+.r-nav a i {
+  font-size: 1.4rem;
+}
+
+/********************* header-end *********************/
+/* 목차 이미지 */
+.box1-top {
+  width: 100%;
+  height: 22.5rem;
+  background: url(img/img02.png) no-repeat center center;
+  background-size: cover;
+}
+
+.box1-top-textbox {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.box1-top-textbox span {
+  color: #fff;
+}
+.box1-top-textbox h2 {
+  color: #fff;
+  font-size: 3rem;
+}
+/* 목차 이미지 */
+/* 본문 */
+.container {
+  max-width: 1150px;
+  padding: 3rem 0;
+  margin: 0 auto;
+}
+.sub4-main h2 {
+  padding: 1rem 0.5rem;
+}
+.sub4-main ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.sub4-main ul li {
+  height: 285px;
+  margin: 0 6px 12px;
+  width: calc(20% - 12px);
+  padding: 19px 12px;
+  background: #fafafa;
+}
+.sub4-main ul li p {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 100%;
+}
+.sub4-main ul li dl {
+  margin-top: 1.5rem;
+}
+.sub4-main ul li dl dt {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  color: #0e347e;
+}
+.sub4-main ul li dl dd {
+  letter-spacing: -0.25px;
+  white-space: nowrap;
+  font-size: 0.96rem;
+  line-height: 150%;
+  color: #999;
+}
+.b-text-box {
+  margin-top: 20px;
+  padding: 28px 24px;
+}
+.b-text-box p {
+  font-size: 0.9rem;
+  line-height: 150%;
+}
+/* footer */
+
+.footer {
+  width: 100%;
+
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+}
+
+.foot-right {
+  display: flex;
+  gap: 70px;
+}
+.foot-right .foot-address dt {
+  padding-right: 25px;
+}
+
+.foot-address dl {
+  display: flex;
+}
+
+.foot-left p {
+  font-size: 0.8rem;
+  color: #9c9e9c;
+}
+
+.foot-right strong {
+  color: #666666;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.foot-right dt,
+dd {
+  padding: 3px;
+  font-size: 0.8rem;
+}
+.foot-right dt {
+  color: #abadab;
+}
+.foot-right dd {
+  color: #9c9e9c;
+  font-weight: 600;
+}
+/* footer */
+@media screen and (max-width: 1030px) {
+  .wrap {
+    width: 100%;
+  }
+  .header {
+    padding: 0;
+  }
+  .header-wrap {
+    width: 100%;
+  }
+  .gnb__drop-down {
+    display: block;
+    position: static;
+  }
+  #gnbb {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    padding: 70px 50px;
+    top: 0;
+    right: 0;
+    left: 100%;
+
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    background: #222;
+    transition: all 0.5s ease-in-out;
+    z-index: 1000;
+    gap: 30px;
+  }
+
+  .gnb > li > a {
+    text-align: center;
+    color: #fff;
+  }
+  .gnb li a:hover {
+    color: #fff;
+  }
+  .gnb__drop-down li a {
+    color: #aaaa;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  #gnbb.open {
+    left: 0;
+  }
+  .gnb li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .r-nav {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    position: absolute;
+    right: 0;
+  }
+  .r-nav a {
+    display: none;
+  }
+  .r-nav a i {
+    z-index: 1;
+  }
+  .gnb li a:hover {
+    color: #fff;
+    font-weight: 500;
+  }
+  .bx-x {
+    color: #fff;
+  }
+  /* header */
+  .sub4-main ul li {
+    width: calc(33.3% - 12px);
+  }
+}
+@media screen and (max-width: 759px) {
+  .sub4-main ul li {
+    width: calc(50% - 12px);
+  }
+  /* footer */
+
+  .footer {
+    width: 100%;
+
+    border-top: 1px solid #ddd;
+    display: flex;
+  }
+
+  .foot-right {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .foot-right .foot-address dt {
+    padding-right: 10px;
+  }
+
+  .foot-address dl {
+    display: flex;
+  }
+
+  .foot-left p {
+    font-size: 0.8rem;
+    color: #9c9e9c;
+  }
+
+  .foot-right strong {
+    color: #666666;
+    font-size: 1rem;
+    margin-bottom: 4px;
+    display: inline-block;
+  }
+  .foot-right dt,
+  dd {
+    padding: 0px 3px;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 559px) {
+  .box1-top {
+    height: 18.5rem;
+  }
+  .box1-top-textbox h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 390px) {
+  .box1-top {
+    height: 13.5rem;
+  }
+  .box1-top-textbox h2 {
+    font-size: 1.8rem;
+  }
+  .box1-top-textbox span {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+  }
+  .sub4-main ul li {
+    height: 13rem;
+  }
+  .sub4-main ul li dl dt {
+    font-size: 1rem;
+  }
+  .sub4-main ul li dl dd {
+    white-space: inherit;
+    font-size: 0.8rem;
+  }
+  .b-text-box p {
+    padding-bottom: 0.5rem;
+    font-size: 0.8rem;
+  }
+  /* footer */
+
+  .foot-right strong {
+    font-size: 0.8rem;
+  }
+  .foot-right dl dd {
+    font-size: 0.7em;
+  }
+}

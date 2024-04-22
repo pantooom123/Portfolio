@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- cdn -->
+    <script defer src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6444cc98a1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
+    <!-- cdn -->
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>아임파니</title>
+    <link rel="icon" href="img/favicon1.png" />
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- header -->
+      <header class="header">
+        <div class="header-box">
+          <a href="" class="logo"
+            ><img src="img/logo2.png" width="100" alt="로고"
+          /></a>
+          <nav class="nav">
+            <ul id="gnbb" class="gnb">
+              <li>
+                <a href="#">회사소개</a>
+                <i class="fa-solid fa-angle-down"></i>
+                <ul class="gnb-sub">
+                  <li><a href="">인사말</a></li>
+                  <li><a href="">조직도</a></li>
+
+                  <li><a href="">찾아오시는길</a></li>
+                  <i class="fa-solid fa-angle-down"></i>
+                </ul>
+              </li>
+              <li>
+                <a href="#">주요기능</a>
+                <i class="fa-solid fa-angle-down"></i>
+                <ul class="gnb-sub">
+                  <li><a href="">온/오프 마케팅</a></li>
+                  <li><a href="">쇼핑몰</a></li>
+                  <li><a href="">모니터링</a></li>
+                  <li><a href="">웹제작</a></li>
+                </ul>
+              </li>
+              <li><a href="#">상담신청</a></li>
+              <li><a href="#">채용</a></li>
+              <li>
+                <a href="#">고객지원</a>
+                <i class="fa-solid fa-angle-down"></i>
+                <ul class="gnb-sub">
+                  <li><a href="">블로그</a></li>
+                  <li><a href="">제휴문의</a></li>
+                  <li><a href="">자주 묻는 질문</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="right-nav">
+            <a href="#" class="right-btn">로그인</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+          </div>
+        </div>
+      </header>
+      <!-- // header -->
+      <div class="container">
+        <div class="introduction-box">
+          <div class="introduction--text">
+            <span><span>고</span></span>
+            <span><span>객</span></span>
+            <span><span>과 </span></span>
+            <span>&#x00A0;</span>
+            <span><span>함</span></span>
+            <span><span>께</span></span>
+            <span>&#x00A0;</span>
+            <span><span>성</span></span>
+            <span><span>장</span></span>
+            <span><span>하</span></span>
+            <span><span>다</span></span>
+            <span><span>,</span></span>
+            <span>&#x00A0;</span>
+            <span>&#x00A0;</span>
+            <span><span>impany</span></span>
+          </div>
+        </div>
+
+        <div class="main-vid">
+          <video
+            src="img/visual.mp4"
+            type="video/mp4"
+            playsinline
+            autoplay
+            muted
+            loop
+          ></video>
+        </div>
+        <section class="sec1">
+          <article class="sec1-content-box">
+            <div class="asd">
+              <div class="sec1-con-l dldl">
+                <span>많은 기업들이<br />아임파니로 할까요?</span>
+                <p>impany</p>
+              </div>
+            </div>
+            <ul class="con-list">
+              <li class="con-card">
+                <div class="con-card-body">
+                  <picture>
+                    <img src="img/con2.png" alt="메인이미지" />
+                  </picture>
+                </div>
+                <div class="con-card-footer">
+                  <div class="text-box">
+                    <span>첫째,</span><br />
+                    <span>정확하고 빠르기 때문입니다</span>
+                  </div>
+                </div>
+              </li>
+              <li class="con-card">
+                <div class="con-card-body">
+                  <picture>
+                    <img src="img/con1.png" alt="메인이미지" />
+                  </picture>
+                </div>
+                <div class="con-card-footer">
+                  <div class="text-box">
+                    <span>둘째,</span><br />
+                    <span>창의적이기 때문입니다</span>
+                  </div>
+                </div>
+              </li>
+              <li class="con-card">
+                <div class="con-card-body">
+                  <picture>
+                    <!-- <source media="(max-width: 1024px)" srcset="img/con1.png" />
+                    <source media="(max-width: 1440px)" srcset="img/con1.png" /> -->
+                    <img src="img/con3.png" alt="메인이미지" />
+                  </picture>
+                </div>
+                <div class="con-card-footer">
+                  <div class="text-box">
+                    <span>셋째,</span><br />
+                    <span>타 업체에 비해 저렴합니다</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </article>
+        </section>
+        <section class="sec2">
+          <div class="box2">
+            <figure class="box2-fig">
+              <h2>마케팅에 필요한 모든 기능을 하나로</h2>
+              <div class="grid-container">
+                <div class="box">
+                  <img src="img/arrow.gif" alt="아이콘" />
+                  <b>개인화 타겟팅</b>
+                  <p>
+                    목표 고객의 특성을 고려한 타겟팅을 통해<br />
+                    맞춤형 고객 경험을 제공하세요.
+                  </p>
+                  <span class="box2--more">자세히보기</span>
+                </div>
+                <div class="box">
+                  <img src="img/fireworks.gif" alt="아이콘" />
+                  <b>데이터 수집</b>
+                  <p>
+                    데이터를 원하는 조건으로<br />
+                    자유로운 커스터마이징이 가능합니다.
+                  </p>
+                  <span class="box2--more">자세히보기</span>
+                </div>
+                <div class="box">
+                  <img src="img/loading.gif" alt="아이콘" />
+                  <b>분석 및 모니터링</b>
+                  <p>
+                    대시보드를 통해 마케팅 성과 지표를<br />
+                    분석합니다.
+                  </p>
+                  <span class="box2--more">자세히보기</span>
+                </div>
+                <div class="box">
+                  <img src="img/speech.gif" alt="아이콘" />
+                  <b>상품추천</b>
+                  <p>
+                    고객의 취향, 속성을 상담하여<br />
+                    추천해드립니다.
+                  </p>
+                  <span class="box2--more">자세히보기</span>
+                </div>
+                <div class="box">
+                  <img src="img/star.gif" alt="아이콘" />
+                  <b>ui/ux</b>
+                  <p>
+                    직관적이고 보기 편한 디자인으로<br />
+                    추천해드립니다.
+                  </p>
+                  <span class="box2--more">자세히보기</span>
+                </div>
+                <div class="box">
+                  <img src="img/top-logo.png" alt="아이콘" />
+                  <b>ui/ux</b>
+                  <p>
+                    직관적이고 보기 편한 디자인으로<br />
+                    추천해드립니다.
+                  </p>
+                  <span class="box2--more">자세히 보기</span>
+                </div>
+              </div>
+            </figure>
+          </div>
+        </section>
+        <section class="sec4">
+          <h2>많은 기업과 함께하고 있습니다</h2>
+          <div class="box4">
+            <ul class="box4-layout animation">
+              <li class="news-box">
+                <img src="img/paypal.png" alt="" />
+              </li>
+              <li class="news-box">
+                <img src="img/aws.png" alt="" />
+              </li>
+              <li class="news-box">
+                <img src="img/channeltalk.png" alt="" />
+              </li>
+              <li class="news-box">
+                <img src="img/easywinner.png" alt="" />
+              </li>
+              <li class="news-box">
+                <img src="img/eximbay.png" alt="" />
+              </li>
+              <li class="news-box">
+                <img src="img/fassto.png" alt="" />
+              </li>
+              <li class="news-box">
+                <img src="img/inicis.png" alt="" />
+              </li>
+              <li class="news-box">
+                <img src="img/kakao.png" alt="" />
+              </li>
+              <li class="news-box">
+                <img src="img/kcp.png" alt="" />
+              </li>
+              <li class="news-box">
+                <img src="img/meta.png" alt="" />
+              </li>
+              <li class="news-box">
+                <img src="img/playauto.png" alt="" />
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="foot-top-inner">
+            <div class="foot-nav">
+              <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+              </ul>
+            </div>
+            <div class="foot-gnb">
+              <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">Facebook</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="foot-top-inner">
+            <div class="foot-bottom-info">
+              <p>
+                <span>주소: 서울시 강남구 남부순환로 </span>
+                <span>대표: 박창진</span>
+              </p>
+              <p>전화번호 <em>000-0000</em></p>
+              <p class="copyright">copyright (C) 2024 All rights</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

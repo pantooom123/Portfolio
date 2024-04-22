@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6444cc98a1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>cafe.coffee</title>
+    <link rel="icon" href="img/fav.png" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header" id="headerr">
+        <div class="header-wrap">
+          <h1>
+            <a href="#" class="logo-img">
+              <img src="img/logo-1.png" alt="로고" />
+            </a>
+          </h1>
+          <nav class="nav">
+            <ul id="gnbb" class="gnb">
+              <li>
+                <a href="#">회사소개</a>
+                <ul class="gnb__drop-down">
+                  <li><a href="sub1.html">브랜드</a></li>
+                  <li><a href="#">BI</a></li>
+                  <li><a href="#">오시는길</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">메뉴</a>
+                <ul class="gnb__drop-down">
+                  <li><a href="#">음료</a></li>
+                  <li><a href="#">푸드</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">매장</a>
+                <ul class="gnb__drop-down">
+                  <li><a href="sub3.html">매장찾기</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">창업안내</a>
+                <ul class="gnb__drop-down">
+                  <li><a href="sub4.html">창업절차</a></li>
+                  <li><a href="#">인테리어</a></li>
+                  <li><a href="#">창업소식</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">소식</a>
+                <ul class="gnb__drop-down">
+                  <li><a href="#">SNS</a></li>
+                  <li><a href="#">뉴스</a></li>
+                  <li><a href="#">공지사항</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="r-nav">
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+          </div>
+        </div>
+      </header>
+      <section class="sec sec1">
+        <img src="img/bg01.jpg" alt="배경이미지" />
+        <!-- <img src="img/bg2.jpg" alt="" />
+        <img src="img/bg3.jpg" alt="" /> -->
+        <div class="scroll-down">
+          <div class="scroll">
+            <span class="scroll-dot"></span>
+          </div>
+          <p>스크롤을 내려주세요</p>
+        </div>
+      </section>
+      <section class="sec sec2">
+        <div class="sec2-l">
+          <div class="sec2-l_box">
+          <h2>COFFEE SHOP</h2>
+          <b
+            >100% 프리미엄 아라비카 원두를 로스팅하여,<br> 
+            깊고 부드러운 커피와 빅사이즈로 구성된<br> 
+            다양한 음료를 합리적인 가격으로 제공합니다.</br
+          >
+        </b>
+        <p>좋은 품질의 재료를, 합리적인 가격으로 제공하여 <br>
+          좋은 품질의 음료를 저렴한 가격으로 만나보실 수 있습니다.</p>
+          <ul>
+            <li>브랜드 소개</li>
+            <li>창업 문의</li>
+          </ul>
+        </div>
+      </div>
+        <div class="sec2-r">
+        </div>
+      </section>
+      <section class="sec sec3">
+        <div class="sec3-box">
+        <div class="tab-inner">
+          <ul class="btn">
+            <li data-alt="tab1" class="active">Coffee</li>
+            <li data-alt="tab2">Tea</li>
+            <li data-alt="tab3">Smoothie</li>
+            <li data-alt="tab4">Frappuccino</li>
+            <li data-alt="tab5">FOOD</li>
+          </ul>
+          <div class="tabs">
+            <div id="tab1" class="active">
+              <ul>
+                <li>
+                  <img src="img/menu01.png" width="250" alt="카페라떼">
+                  <span>카페라떼</span>
+                </li>
+                <li>
+                  <img src="img/menu13.png" width="250" alt="카푸치노">
+                  <span>카푸치노</span>
+                </li>
+                <li>
+                  <img src="img/menu02.png" width="250" alt="카라멜 마키야토">
+                  <span>카라멜 마키야토</span>
+                </li>
+                <li>
+                  <img src="img/menu03.png" width="250" alt="아메리카노">
+                  <span>아메리카노</span>
+                </li>
+                <li>
+                  <img src="img/menu10.png" width="250" alt="돌체라떼">
+                  <span>돌체 라떼</span>
+                </li>
+                <li>
+                  <img src="img/menu11.png" width="250" alt="플랫화이트">
+                  <span>플랫화이트</span>
+                </li>
+                <li>
+                  <img src="img/menu01.png" width="250" alt="바닐라라떼">
+                  <span>바닐라 라떼</span>
+                </li>
+                <li>
+                  <img src="img/menu12.png" width="250" alt="아포가토">
+                  <span>아포가토</span>
+                </li>
+
+              </ul>
+            </div>
+            <div id="tab2">
+              <ul>
+                <li>
+                  <img src="img/menu04.png" width="250" alt="스노우말차라떼">
+                  <span>스노우 말차 라떼</span>
+                </li>
+                <li>
+                  <img src="img/menu05.png" width="250" alt="유기농녹차">
+                  <span>유기농 녹차</span>
+                </li>
+                <li>
+                  <img src="img/menu06.png" width="250" alt="얼그레이티">
+                  <span>얼 그레이 티</span>
+                </li>
+                <li>
+                  <img src="img/menu07.png" width="250" alt="캐모마일티">
+                  <span>캐모마일 티</span>
+                </li>
+                <li>
+                  <img src="img/menu08.png" width="250" alt="레드패션티">
+                  <span>레드 패션 티</span>
+                </li>
+                <li>
+                  <img src="img/menu09.png" width="250" alt="말차라떼">
+                  <span>말차라떼</span>
+                </li>
+              </ul>
+            </div>
+            <div id="tab3">
+              <ul>
+                <li>
+                  <img src="img/menu20.png" width="250" alt="오렌지스무디">
+                  <span>오렌지 스무디</span>
+                </li>
+                <li>
+                  <img src="img/menu21.png" width="250" alt="망고스무디">
+                  <span>망고 스무디</span>
+                </li>
+                <li>
+                  <img src="img/menu22.png" width="250" alt="딸기스무디">
+                  <span>딸기 스무디</span>
+                </li>
+              </ul>
+            </div>
+            <div id="tab4">
+              <ul>
+                <li>
+                  <img src="img/menu30.png" width="250" alt="프라푸치노">
+                  <span>자바 칩 프라푸치노</span>
+                </li>
+                <li>
+                  <img src="img/menu31.png" width="250" alt="프라푸치노">
+                  <span>카라멜 프라푸치노</span>
+                </li>
+                <li>
+                  <img src="img/menu32.png" width="250" alt="프라푸치노">
+                  <span>초콜릿 프라푸치노</span>
+                </li>
+                <li>
+                  <img src="img/menu33.png" width="250" alt="프라푸치노">
+                  <span>에스프레소 프라푸치노</span>
+                </li>
+              </ul>
+            </div>
+            <div id="tab5">
+              <ul>
+                <li>
+                  <img src="img/menu40.png" width="250" alt="쇼콜라">
+                  <span>라즈베리 쇼콜라</span>
+                </li>
+                <li>
+                  <img src="img/menu41.png" width="250" alt="카스테라">
+                  <span> 생크림 카스텔라</span>
+                </li>
+                <li>
+                  <img src="img/menu42.png" width="250" alt="블루베리치즈케이크">
+                  <span>블루베리 치즈 케이크</span>
+                </li>
+                <li>
+                  <img src="img/menu43.png" width="250" alt="쿠헨">
+                  <span>바움쿠헨</span>
+                </li>
+                <li>
+                  <img src="img/menu44.png" width="250" alt="베이글">
+                  <span>블루베리 베이글</span>
+                </li>
+                <li>
+                  <img src="img/menu45.png" width="250" alt="머핀">
+                  <span>잉글리쉬 머핀</span>
+                </li>
+                <li>
+                  <img src="img/menu46.png" width="250" alt="샌드위치">
+                  <span>풀드포크 샌드위치</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <section class="sec sec4">
+      <div class="sec4-box">
+        <h3>EVENT</h3>
+        <ul>
+          <li><img src="img/event01.png" width="347" alt="이벤트">
+            <span>식목일 기념 이벤트</span>
+            <p>2023-10-11</p>
+          </li>
+          <li><img src="img/event02.png" width="347" alt="이벤트">
+            <span>2월 영국 항공권을 잡아라 !</span>
+            <p>2023-10-11</p>
+          </li>
+          <li><img src="img/event03.png" width="347" alt="이벤트">
+            <span>빠른 배송 이벤트</span>
+            <p>2023-10-11</p>
+          </li>
+        </ul>
+        <span class="event-btn">이벤트 더보기</span>
+      </div>
+      </section>
+      <section class="sec sec5">
+        <div class="sec5-box">
+        <div class="sec5-l">
+          <h1>NOTICE</h1>
+        </div>
+        <div class="sec5-r">
+          <ul>
+            <li>
+              <a href="#">
+                <strong>개인정보처리방침 및 개인정보 수집 및 이용 동의</strong>
+                <span>2024-01-10</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <strong>위생 관리 교육</strong>
+                <span>2024-01-10</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <strong>이용약관 개정 안내</strong>
+                <span>2024-01-10</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <strong>정책 변경 안내</strong>
+                <span>2024-01-10</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+        <footer class="footer">
+          <div class="foot-left">
+            <img src="img/top-logo.png" alt="하단로고">
+            <p>copyright ©2024,copy</p>
+          </div>
+          <div class="foot-right">
+            <div class="foot-address">
+              <strong>INFORMATION</strong>
+              <dl>
+                <dt>회사명</dt>
+                <dd style="margin-left: 23px">cafe</dd>
+              </dl>
+              <dl>
+                <dt>사업자번호</dt>
+                <dd>123-45-678</dd>
+              </dl>
+
+            </div>
+            <div class="foot-right">
+              <div class="foot-address">
+                <strong>ADDRESS</strong>
+                <dl>
+                  <dd>서울시 서울대로 서울2길 25 빌딩 </dd>
+                </dl>
+              </div>
+            </div>
+            <div class="foot-right">
+              <div class="foot-address">
+                <strong>CONTACT</strong>
+                <dl>
+                  <dt>전화번호</dt>
+                  <dd>123-4567</dd>
+                </dl>
+              </div>
+
+            </div>
+          </div>
+        </footer>
+      </section>
+    </div>
+    
+  </body>
+</html>

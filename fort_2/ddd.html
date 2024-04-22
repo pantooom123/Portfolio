@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auto Image Change</title>
+    <style>
+      .m-t-sec-top {
+        display: flex;
+        border: 1px solid #000;
+      }
+      .sec-top_box {
+        margin: 10px;
+        position: relative;
+        border: 1px solid red;
+      }
+      .sec-top_box img {
+        max-width: 100%;
+        height: auto;
+        transition: opacity 0.5s ease; /* 페이드 효과를 위한 트랜지션 추가 */
+      }
+      .sec-top_box:hover img {
+        opacity: 0.7; /* 호버 시 투명도를 줄여 효과적으로 중지된 것처럼 보이게 함 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="m-t-sec-top">
+      <div class="sec-top_box">
+        <img src="../fort/img/news_img_01.jpg" alt="" />
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let imagePaths = [
+          "../fort/img/news_img_01.jpg",
+          "../fort/img/news_img_02.jpg",
+          "../fort/img/news_img_03.jpg",
+          /* 추가 이미지 경로들을 넣으세요 */
+        ];
+
+        let currentIndex = 0;
+        let imgElement = document.querySelector(".sec-top_box img");
+        let intervalId;
+
+        function changeImage() {
+          imgElement.src = imagePaths[currentIndex];
+          currentIndex = (currentIndex + 1) % imagePaths.length;
+        }
+
+        function startImageChange() {
+          intervalId = setInterval(changeImage, 3000);
+        }
+
+        // 초기 이미지 설정
+        changeImage();
+
+        // 5초마다 이미지 변경
+        startImageChange();
+
+        // 호버 이벤트 처리
+        let secTopBox = document.querySelector(".sec-top_box");
+
+        secTopBox.addEventListener("mouseenter", function () {
+          clearInterval(intervalId); // 호버 시간 간격 중지
+        });
+
+        secTopBox.addEventListener("mouseleave", function () {
+          startImageChange(); // 호버 해제 시 다시 시작
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+#gnbb {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  padding: 70px 50px;
+  top: 0;
+  right: 0;
+  left: 100%;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  background: #222;
+  transition: all 0.5s ease-in-out;
+  z-index: 1000;
+  gap: 30px;
+}
+#gnbb li a {
+  text-align: center;
+  color: #fff;
+}
+#gnbb li a:hover {
+  color: #fff;
+}
+
+#menu-icon {
+  display: block;
+  padding-right: 0.5rem;
+}
+
+#gnbb.open {
+  left: 0;
+}
+
+.r-nav {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  position: absolute;
+  right: 0;
+}
+
+.r-nav a {
+  display: none;
+}
+
+.r-nav a i {
+  z-index: 1;
+}
