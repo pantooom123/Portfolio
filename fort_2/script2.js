@@ -64,7 +64,7 @@ document.addEventListener("mouseup", dragStop);
 //////메인 visual
 
 document.addEventListener("DOMContentLoaded", function () {
-  let imagePaths = ["img/fashion1.jpg", "img/store1.jpg", "img/store2.jpg"];
+  let imagePaths = ["img/asd2.png", "img/asd3.png", "img/asd1.png"];
 
   let currentIndex = 0;
   let imgElement = document.querySelector(".visual-img img");

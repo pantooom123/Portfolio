@@ -164,36 +164,19 @@ em {
   width: 100%;
   /*없애야함*/
   /* height: 300vh;  */
-  margin-top: 20px;
 }
 .visual {
   width: 100%;
-
-  padding: 0 100px;
-  display: grid;
-  grid-gap: 30px;
-
-  /* grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas:
-    "visual visual box1 box2"
-    "visual visual box3 box4"; */
-  grid-template-columns: 1fr 300px 300px;
-  /* grid-template-rows: 1fr 300px 300px; */
-  grid-template-areas:
-    "visual box1 box2"
-    "visual box3 box4";
 }
 
 .visual .visual-img {
   width: 100%;
   height: 700px;
-  grid-area: visual;
   position: relative;
 }
 .visual .visual-img p {
   position: absolute;
-  color: #fff;
+  color: #000000;
 }
 .visual .visual-img .p-left {
   left: 10px;
@@ -214,57 +197,6 @@ em {
   opacity: 0.7;
 }
 
-.visual-box1 {
-  grid-area: box1;
-  background: #dddd;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-.box-lay {
-  color: #000;
-}
-.visual-box2 {
-  grid-area: box2;
-  background: #dddd;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-.visual-box3 {
-  grid-area: box3;
-  background: #dddd;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-.visual-box3,
-.visual-box4 img {
-  object-fit: cover;
-}
-.visual-box4 {
-  grid-area: box4;
-  overflow: hidden;
-}
-.visual-box3 img {
-  width: 100%;
-  height: 100%;
-  transition: transform 0.3s ease-in-out;
-}
-.visual-box3:hover img {
-  transform: scale(1.1);
-}
-.visual-box4 img {
-  width: 100%;
-  height: 100%;
-  transition: transform 0.3s ease-in-out;
-}
-.visual-box4:hover img {
-  transform: scale(1.1);
-}
 .main-top-sec {
   width: 1200px;
   margin: 80px auto 0;
